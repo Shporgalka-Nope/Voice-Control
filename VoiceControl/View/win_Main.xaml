@@ -34,7 +34,13 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                
+                <Rectangle Grid.Column="1" StrokeThickness="2" Stroke="White"/>
+                <StackPanel Name="st" Grid.Column="1" >
+                    <TextBlock Text="Status:" FontSize="25" Foreground="White" Grid.Column="1" FontFamily="Calibri" HorizontalAlignment="Center"/>
+                    <TextBlock Name="tb_process" FontSize="18" Foreground="White" HorizontalAlignment="Center" Grid.Column="1" FontFamily="Consolas"/>
+                    <TextBlock Text="Recognised:" FontSize="20" Foreground="White" Grid.Column="1" FontFamily="Calibri" HorizontalAlignment="Center"/>
+                    <TextBlock Text="" FontSize="18" Foreground="White" HorizontalAlignment="Center" Grid.Column="1" FontFamily="Consolas"/>
+                </StackPanel>
             </Grid>
         </DockPanel>
     </Grid>

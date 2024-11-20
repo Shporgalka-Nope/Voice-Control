@@ -18,19 +18,14 @@ namespace VoiceControl.Model
         }
         private GrammarBuilder _gb;
         
-        private SpeechRecognitionEngine sr;
+        public SpeechRecognitionEngine sr;
 
         public VoiceRecognitionModel()
         {
             sr.SetInputToDefaultAudioDevice();
-            gb.Append(new Choices("Left", "Right", "Up", "Down"));
+            Grammar gr = new Grammar(new GrammarBuilder("test"));
             sr.UnloadAllGrammars();
-
-        }
-
-        public void AppendNewChoices(List<string> choices)
-        {
-            //TO-DO
+            sr.LoadGrammar(gr);
         }
     }
 }
