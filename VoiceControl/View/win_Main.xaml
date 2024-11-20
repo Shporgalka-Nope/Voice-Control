@@ -23,12 +23,17 @@
         </Grid.Background>
         <DockPanel>
             <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" VerticalAlignment="Top">
-                <Button Content="Main" FontSize="16" Height="25" Margin="0 0 1 0"/>
+                <Button Content="Main" FontSize="13" Height="25" Margin="0 0 1 0"/>
             </StackPanel>
-            <ScrollViewer DockPanel.Dock="Left" Width="150">
-                
+            <ScrollViewer DockPanel.Dock="Left" Width="150" VerticalScrollBarVisibility="Auto">
+
             </ScrollViewer>
             <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
                 
             </Grid>
         </DockPanel>
